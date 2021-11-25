@@ -12,6 +12,7 @@ module.exports = {
     mode: 'development', // 开发模式
     module: {
         rules: [
+            ...base.module.rules,
           {
             test: /\.css$/i, //正则表达式
             use: ["style-loader","css-loader"], // 开发环境build用JS生成CSS
